@@ -1,3 +1,7 @@
+@import "./_variables";
+@import "./_mixins";
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +43,19 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+body {
+  background-color: $bakgrunns-farge;
+  color: $tekst-farge;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  @include flex-center;
+  flex-direction: column;
+  height: 100vh;
 }

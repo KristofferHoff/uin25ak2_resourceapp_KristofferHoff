@@ -1,3 +1,6 @@
+@import "./variables";
+@import "./mixins";
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -63,6 +66,15 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    $bakgrunns-farge: #f5f5f5;
   }
 }
+
+h1 {
+  color: $hoved-farge;
+}
+
+button {
+  @include button-style($hoved-farge);
+}
+
