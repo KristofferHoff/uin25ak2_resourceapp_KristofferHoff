@@ -1,5 +1,6 @@
-@import "./variables";
-@import "./mixins";
+@use "./_variables" as *;
+@use "./_mixins" as *;
+
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
