@@ -1,5 +1,64 @@
-// src/styles/_variables.scss
-$hoved-farge: #3498db;
-$andre-farge: #2ecc71;
-$bakgrunns-farge: #f5f5f5;
-$tekst-farge: #333;
+@use "./_variables" as *;
+@use "./_mixins" as *;
+
+:root {
+  --DarkBlue: #2A324B;
+  --Blue: #58699D;
+  --LightBlue: #E1E5EE;
+  --White: #fff;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--LightBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+#category-meny {
+  display: flex;
+  gap: 15px;
+  background-color: var(--White);
+  border-radius: 10px;
+
+  button {
+      background-color: var(--DarkBlue);
+      color: var(--White);
+      border: none;
+      padding: 20px 40px;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 225px;
+      
+      &:hover {
+          background-color: var(--White); 
+          transform: scale(1.05); 
+          color: #2A324B;
+      }
+  }
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#resource-list {
+  padding: 25px;
+  background-color: var(--White);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

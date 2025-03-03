@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./styles/app.scss";
+import { BrowserRouter as Router, Routes, Route, } from "react-router-dom";
+import "./Styles/App.scss";
+import "./Components/Nav";
 import Layout from "./Components/Layout";
 import Resources from "./Components/Resources";
 
@@ -13,7 +14,7 @@ function App() {
         <Route path="css" element={<Resources category="css" />} />
         <Route path="javascript" element={<Resources category="javascript" />} />
         <Route path="react" element={<Resources category="react" />} />
-        <Route path="sanity" element={<Resources category="sanity" />} />
+        <Route path="sanity" element={<Resources category="headless-cms" />} />
       </Route>
     </Routes>
   </Router>
@@ -21,3 +22,5 @@ function App() {
 }
 
 export default App
+
+

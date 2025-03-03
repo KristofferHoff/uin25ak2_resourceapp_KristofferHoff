@@ -1,62 +1,72 @@
-@use "./_variables" as *;
-@use "./_mixins" as *;
 
-
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  --DarkBlue: #2A324B;
+  --Blue: #58699D;
+  --LightBlue: #E1E5EE;
+  --White: #fff;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 
 body {
-  background-color: $bakgrunns-farge;
-  color: $tekst-farge;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--LightBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.container {
-  @include flex-center;
-  flex-direction: column;
-  height: 100vh;
+header {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 20px;
+    max-width: 1200px;
+    justify-content: center;
+
+    li{
+      padding: 20px 40px;
+      justify-content: center;
+      height: 30px;
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      border-radius: 10px;
+      background-color: var(--DarkBlue);
+      color: var(--White);
+      border: none;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 150px;
+
+      a{
+        color: var(--White);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+}
+
+#resource-list {
+  padding: 25px;
+  background-color: var(--White);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
