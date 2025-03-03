@@ -1,5 +1,5 @@
 import React from "react";
-
+import resources from ".../"
 function Resources() {
   return (
     <div>
