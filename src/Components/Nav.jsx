@@ -4,11 +4,11 @@ export default function Nav() {
     return(
         <nav>
             <ul>
-                <li><Link to="/html">HTML</Link></li>
-                <li><Link to="/css">CSS</Link></li>
-                <li><Link to="/JavaScript">JavaScript</Link></li>
-                <li><Link to="/React">React</Link></li>
-                <li><Link to="/Sanity">Sanity</Link></li>
+                <Link to="/html"><li>HTML</li></Link>
+               <Link to="/css"><li>CSS</li></Link>
+                <Link to="/JavaScript"><li>JavaScript</li></Link>
+                <Link to="/React"><li>React</li></Link>
+                <Link to="/Sanity"><li>Sanity</li></Link>
             </ul>
         </nav>
     );

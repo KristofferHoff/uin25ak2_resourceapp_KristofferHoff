@@ -1,10 +1,12 @@
 import Nav from "./Nav";
 import React from "react";
 import { Outlet } from "react-router-dom"; 
+import PageTitle from "./PageTitle";
 
 const Layout = () => {
   return (
     <div>
+        <PageTitle />
       <header>
         <Nav />
       </header>
