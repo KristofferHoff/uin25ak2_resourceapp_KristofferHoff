@@ -1,7 +1,7 @@
 import React from "react";
-import { resources } from "./ressurser"; 
+import { resources } from "./ressurser.js"; 
 
-export default function ResourcesList({ category }) {
+export default function ResourcesList({ category= "html" }) {
   const filteredResources = resources.filter(resource => resource.category === category);
 
   return (
@@ -15,6 +15,7 @@ export default function ResourcesList({ category }) {
               {resource.category}
             </a>
           </li>
+          //SETT INN SÅ LINKER UNDER HTML OSV SÅ JRG FÅR LINKER PÅ TINGENE
         ))}
       </ul>
     </div>
